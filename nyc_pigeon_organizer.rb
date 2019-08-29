@@ -7,8 +7,8 @@ def nyc_pigeon_organizer(data)
     v.each do | key, name_list |
       name_list.each do | name |
         reorg_hash[name] = {}
-        reorg_hash[name][k] = []
-        reorg_hash[name][k] = key.to_s
+        # reorg_hash[name][k] = []
+        reorg_hash[name][k] = [key.to_s]
         binding.pry
       end
     end
