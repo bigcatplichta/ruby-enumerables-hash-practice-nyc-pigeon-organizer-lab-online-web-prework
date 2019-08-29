@@ -7,10 +7,12 @@ def nyc_pigeon_organizer(data)
     v.each do | key, name_list |
       name_list.each do | name |
           reorg_hash[name] = {} unless reorg_hash[name]
+          if !reorg_hash[name][k]
           reorg_hash[name][k] = [key.to_s] 
-             
+          else 
+          reorg_hash[name][k].push(key.to_s)
+          end
           binding.pry
-         
       end
     end
   end
