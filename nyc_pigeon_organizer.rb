@@ -10,7 +10,7 @@ def nyc_pigeon_organizer(data)
         # reorg_hash[name][k] = k
         # reorg_hash[name][k][key] = key
       end
-      reorg_hash[name][k][key] = key
+      # reorg_hash[name][k][key] = key
       binding.pry
     end
   end
