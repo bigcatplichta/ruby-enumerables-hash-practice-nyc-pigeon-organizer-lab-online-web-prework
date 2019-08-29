@@ -1,4 +1,4 @@
-require 'pry'
+# require 'pry'
 
 def nyc_pigeon_organizer(data)
   reorg_hash = {}
@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
           else 
           reorg_hash[name][k].push(key.to_s)
           end
-          binding.pry
+          # binding.pry
       end
     end
   end
